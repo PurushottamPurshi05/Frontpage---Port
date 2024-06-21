@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front Page</title>
     <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
         body {
-            background-image: url('bg1.jpeg');
+            background-image: url('WhatsApp Image 2024-06-19 at 1.10.10 PM.jpeg');
             background-repeat: no-repeat;
             background-size: cover;
-            margin: 0;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
         }
 
         #one img {
-            display: block;
-            margin: 0 auto;
             border-radius: 60px;
             border: 2px solid aqua;
             box-shadow: 8px 8px 10px rgb(96, 181, 181), -8px -8px 10px rgb(96, 181, 181);
@@ -43,19 +49,18 @@
         }
 
         #one {
-            text-align: center;
-            margin-top: 10%;
+            margin-bottom: 20px;
         }
 
         #two {
             text-align: center;
             color: aqua;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         #three {
             text-align: center;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         #three a {
@@ -86,10 +91,6 @@
         }
 
         @media (max-width: 768px) {
-            #one {
-                margin-top: 15%;
-            }
-
             #one img {
                 height: 120px;
                 width: 100px;
@@ -114,10 +115,6 @@
         }
 
         @media (max-width: 480px) {
-            #one {
-                margin-top: 20%;
-            }
-
             #one img {
                 height: 100px;
                 width: 80px;
